@@ -1,0 +1,158 @@
+@media screen and (max-width: 1320px) {
+    .content h1 {font-size: 26px;}
+    .content a {padding: 15px 38px;}
+    .content p {font-size: 18px;}
+    .about-us .about-us-carousel {width: 400px;}
+    .about-us {padding: 22px 80px;}
+    .counter-numbers {padding: 10px 80px 40px;}
+    .categories-content {padding: 50px 80px;}
+    .categories-content h1 {font-size: 30px;}
+    .slider img {height: 450px;}
+    .blog {padding: 40px 60px;}
+    .big-container {padding: 25px 5px;}
+    .gallery-container h1 {font-size: 36px;}
+    .contact-us-bg {padding: 60px 40px;}
+    .contact-us {width: 50%;}
+}
+
+@media screen and (max-width: 1037px) {
+    header .menu {margin-top: 16px;}
+    .about-us .about-us-carousel {margin-left: 30px;}
+    .categories-part {padding-right: 20px;}
+    .slider img {height: 435px;}
+    .slider-item h3 {font-size: 20px;}
+}
+
+@media screen and (max-width: 991px) {
+    header{padding: 25px 30px;}
+    header .logo {font-size: 14px;}
+    header ul li a {margin: 0px 15px;}
+    .content {text-align: center;transform: translateX(-50%);min-width: 80%;}
+    .content .btn-group{float: right;}
+    .about-us {padding: 22px 100px;}
+    .about-us {flex-direction: column;}
+    .about-us .about-us-carousel {margin-left: 0px;margin-top: 15px;}
+    .about-us .about-us-carousel {width: 80%;}
+    .counter-numbers .number-container {font-size: 23px;}
+    .categories-part {flex-direction: column;padding-right: 0px;margin-left: 6%;width: 88%;}
+    .categories-content h1 {margin-top: 5px;}
+    .categories-content p {margin-top: 12px;}
+    .categories-content {flex-direction: column;}
+    .gallery-container h1 {font-size: 30px;}
+    .contact-us-bg {padding: 40px;background: #021e21;}
+    .contact-us {width: 80%;margin-left: 10%;}
+    .gallery-container .image-gallery{
+        grid-template-areas:
+            'img-1 img-1 img-2 img-2'
+            'img-1 img-1 img-3 img-3'
+            'img-4 img-4 img-5 img-5'
+            'img-6 img-7 img-7 img-7'
+            'img-8 img-8 img-8 img-8';
+    }
+    .image-gallery a{height: 20rem;}
+    .img-1{min-height: 41.5rem;}
+    .img-6{min-height: 20rem;}
+    .wrap {min-height: 700px;}
+    .slider img {height: 325px;}
+    .slider-item h3 {font-size: 13px;}
+    .blog {padding: 40px 15px;}
+    .blog .little-container .about-blog {font-size: 14px;}
+    .blog .little-container .blog-panel { width: 300px;}
+    .big-container .big-container-text {font-size: 12px;}
+    .big-container .big-container-title {font-size: 18px;}
+}
+
+@media screen and (max-width: 768px) {
+    .wrap {min-height: 500px;}
+    .wave {bottom: 0px;}
+    header {padding: 35px 50px;}
+    .hamburger-ico {display: block;}
+    .content .btn-group{float: none;}
+    header .menu {display: none;width: 90%;margin-left: 5%;float: left;top: 0;height: 250px;background: #09bb72;position: relative;z-index: 5;}
+    .counter-numbers {padding: 10px 40px 40px;}
+    .about-us {padding: 22px 65px;}
+    .counter-numbers .number-container {font-size: 19px;}
+    .categories-content {padding: 50px 65px;}
+    .slider img {height: 400px;margin: 0px 5px;}
+    .gallery-container h1 {font-size: 24px;}
+    .gallery-container h3 {font-size: 16px;}
+    .contact-us {width: 86%;margin-left: 7%;}
+    .contact-form .label-register {font-size: 16px;top: 46px;}
+    .blog h1 {font-size: 25px;}
+    .blog p {font-size: 18px;}
+    header ul li {display: block;padding: 14px;text-align: center;}
+    #menu{z-index: 2;width: 100%}
+    header ul li a {font-weight: 500;}
+
+    .big-container {display: none;}
+    .blog .little-container .blog-panel{width: 500px;}
+    .blog .blog-contain {justify-content: center;}
+    .blog .little-container .blog-panel {margin-bottom: 0px;}
+
+}
+
+@media screen and (max-width: 600px) {
+    header {padding: 35px 30px;}
+    header .logo {font-size: 12px;}
+    .content {min-width: 75%;}
+    .content h1 {font-size: 20px;}
+    .content p {font-size: 12px;}
+    header .menu {width: 100%;margin-left: 0%;}
+    .overlay {width: 300px;}
+    .content h1 {font-size: 20px;}
+    .content a {padding: 15px 23px;font-size: 14px;}
+    .about-us {padding: 22px 30px;}
+    .about-us .text-content {text-align: justify;}
+    .about-us .about-us-carousel {width: 99%;}
+    .advantages h1 {font-size: 30px;}
+    .counter-numbers {padding: 0px 15px 25px;flex-direction: column;}
+    .categories-content {padding: 50px 30px;}
+    .categories-content h1 {font-size: 24px;}
+    .blog h1 {font-size: 23px;}
+    .blog p {font-size: 16px;}
+    .blog .little-container .blog-time {font-size: 11px;}
+    .blog .little-container .about-blog {font-size: 13px;}
+    .responsive-big-conatiner .responsive-big-container-title {font-size: 20px;}
+    .responsive-big-conatiner .responsive-big-container-text {font-size: 13px;}    
+    .responsive-big-conatiner {padding: 20px 5px;}
+    .counter-numbers .number-container {font-size: 20px;padding-bottom: 15px;}
+    .about-us h1 {font-size: 30px;text-align: center;}
+    .blog .little-container .blog-panel {width: 300px;}
+    .responsive-big-conatiner {background: whitesmoke;width: 300px;}
+    .gallery-container .image-gallery{
+        grid-template-areas:
+            'img-1 img-1 img-1 img-1'
+            'img-2 img-2 img-2 img-2'
+            'img-3 img-3 img-3 img-3'
+            'img-4 img-4 img-4 img-4'
+            'img-5 img-5 img-5 img-5'
+            'img-6 img-6 img-6 img-6'
+            'img-7 img-7 img-7 img-7'
+            'img-8 img-8 img-8 img-8';
+    }
+    .image-gallery a,.img-1,.img-6{min-height: 20rem;height: 30rem;}
+    footer .mini-menu{display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr 1fr;gap: 0px 0px;
+        grid-template-areas:
+        ". ."
+        ". ."
+        ". .";
+    }
+    .contact-us h1 {font-size: 30px;text-align: center;}
+    .contact-us {width: 100%;margin-left: 0%;}
+    .contact-form .first-line-form {display: flex;flex-direction: column;}
+    footer .contact-info {flex-direction: column;}
+    .fancybox-wrap {width: 88% !important;}
+    .fancybox-outer, .fancybox-inner {width: 100% !important; height: 220px !important;}
+    .contact-us-bg {padding: 20px 15px;}
+    .contact-form {padding: 10px 25px 25px;}
+    footer .contact-info .copyright {width: 90%;font-size: 14px;text-align: center;margin-bottom: 8px;}
+
+}
+
+@media (min-width: 600px) {
+    .advantages .cards { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .advantages .cards {grid-template-columns: 1fr 1fr 1fr;}
+}
