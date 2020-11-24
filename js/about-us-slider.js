@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $('.about-us-carousel').slick({
+        arrows:false,
+        slidesToShow:1,
+        speed:500,
+        autoplay:true,
+        autoplaySpeed:3000,
+        infinite:true,
+        pauseOnFocus:false,
+        pauseOnHover:false,
+        draggable:false,
+        swipe:false,
+        touchMove:false,
+        fade:true
+    });
+});

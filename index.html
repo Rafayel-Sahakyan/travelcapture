@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Capture</title>
+
+    <!-- Title icon -->
+    <link href="image/ico.png" rel="shortcut icon" type="image/x-icon">
+
+    <!-- Licensed icons pack connect -->
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- JQuery library connect -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+    <!-- Open sans font library connect --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Fancybox plugin connect --> 
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
+    <!-- Connect CSS files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-responsive.css">
+</head>
+
+<body>
+    <!-- Scroll back to top button -->
+    <a id="button"></a>
+
+    <!-- Progress bar -->
+    <div class="prog">
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+
+    <!-- Header with menu & big banner -->
+    <div class="wrap">
+         <!-- Part of menu -->
+        <header>
+            <a href="index.html"><div class="logo"><img src="image/logo.png" alt="" width="80px"> Travel Capture</div></a>
+            <div class="menu">
+                <ul id="menu">
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!--HAMBURGER ICON-->
+            <div class="hamburger-ico">
+                <input type="checkbox" id="checkbox3" class="checkbox3 visuallyHidden">
+                <label for="checkbox3">
+                    <div class="hamburger hamburger3" onclick="OpenClose()">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                    </div>
+                </label>
+            </div>
+        </header>
+
+        <!-- Part of big banner -->
+        <div class="content">
+            <h1 class="typewrite" data-period="2000" data-type='[ "Discover the world with our guide", "Go where you feel the most alive", "It’s a big world out there, go explore", "Rest, keep warm and drink liquids" ]'>
+                <span class="wrap"></span>
+            </h1>
+            <p>Travel Capture - your best friend for tour</p>
+            <div class="btn-group">
+                <a href="#about-us" class="color1">Start Now</a>
+                <a href="#blog">Learn more</a>
+            </div>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="whitesmoke" fill-opacity="1" d="M0,192L60,213.3C120,235,240,277,360,293.3C480,309,600,299,720,266.7C840,235,960,181,1080,165.3C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </div>
+
+    <!-- About us container with small slideshow -->
+    <div class="about-us" id="about-us">
+        <div>
+            <h1>About us</h1>
+            <p class="text-content">We will help you to enjoy wonderfull vacation foodie with your family.</p>
+            <p style="font-size: 15px;text-align: justify;">We only make our recommendations based on our clients' needs-not our sales commissions, so you can rest assured that you'll only stay at places that you want to be and that meet our highest standards for fun, comfort, reliability, and safety. Making sure you are happy and taken care of is our top priority.Our team may not be family by blood, but we are certainly family in spirit. And that family bond is just one of the reasons we are so successful-we are able to share our experiences with one another, bounce travel and entertainment ideas off each other, and have a great time whilst working together. </p>
+            <div class="green-button" onclick="window.open('https://www.facebook.com/','mywindow');">More Info</div>
+        </div>
+        <div class="about-us-carousel">
+            <img src="image/about-us-slider/pic1.jpeg" alt="" >
+            <img src="image/about-us-slider/pic2.jpeg" alt="" >
+            <img src="image/about-us-slider/pic3.jpg" alt="" >
+            <img src="image/about-us-slider/pic4.jpg" alt="" >
+            <img src="image/about-us-slider/pic5.jpg" alt="" >
+        </div>
+    </div>
+
+    <!-- Container of advantages -->
+    <div class="advantages" id="advantages">
+        <h1>Advantages</h1>
+        <div class="cards">
+            <div class="card active-card" data-aos="fade-up">
+                <img src="image/advantages/logo1.png" alt="">
+                <h3>Saving your time</h3>
+            </div>
+            <div class="card" data-aos="fade-down">
+                <img src="image/advantages/logo2.png" alt="">
+                <h3>Safety</h3>
+          </div>
+            <div class="card" data-aos="fade-up">
+                <img src="image/advantages/logo3.png" alt="">
+                <h3>Group discounts</h3>
+           </div>
+            <div class="card" data-aos="fade-down">
+                <img src="image/advantages/logo4.png" alt="">
+                <h3>Photography tours</h3>
+          </div>
+            <div class="card" data-aos="fade-up">
+                <img src="image/advantages/logo5.png" alt="">
+                <h3>Medical assistance</h3>
+           </div>
+            <div class="card" data-aos="fade-down">
+                <img src="image/advantages/logo6.png" alt="">
+                <h3>Experience</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container of numbers -->
+    <div class="counter-numbers" id="numbers">
+        <div class="number-container">
+            <div class="number-fulltitle"><p class="number-title first">0</p><p>K</p><p>&nbsp;+</p></div>
+            <p class="number-comment">Global Customer</p>
+        </div>
+        <div class="number-container"> 
+            <div class="number-fulltitle"><p class="number-title second">0</p><p>&nbsp;+</p></div>
+            <p class="number-comment">Completed Tours</p>
+        </div>   
+        <div class="number-container">
+            <div class="number-fulltitle"><p class="number-title third">0</p><p>&nbsp;+</p></div>
+            <p class="number-comment">Experts Worker</p>
+        </div>
+    </div>
+
+    <!-- Container of categories -->
+    <div class="categories-blok" id="categories">
+        <div class="categories-content">
+            <div class="categories-part">
+                <h1>Let's see the world with us with you & your family</h1>
+                <div class="btn2 green-button" onclick="window.open('https://www.youtube.com/','mywindow');">Explore</div>
+            </div>
+            <div class="categories-part"><p>Your journey begins the moment you contact our friendly and knowledgeable destination specialists, who are here to answer all your questions and reserve your special tour. Our friendly service continues throughout your journey as you are accompanied by our informative, caring tour directors, who are some of the best in the business. Every Travel Capture small group adventure has been carefully designed to make sure you have an unforgettable grassroots travel experience.<br><br> Take a look below to find out what your ideal Travel Capture adventure might look like.</p></div>
+        </div>
+        <div class="categories-gallery">
+            <!-- Big slideshow -->
+            <div class="slider" style="cursor: grab;">
+                <div class="slider-item">
+                    <img src="image/slider/seven-mountain-winter.jpg" alt="">
+                    <div>
+                        <p>WINTER</p>
+                        <h3>Seven Mountain</h3>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image/slider/los-padres-autumn.jpeg" alt="">
+                    <div>
+                        <p>AUTUMN</p>
+                        <h3>Los Padres</h3>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image/slider/east-bay-tour-summer.jpg" alt="">
+                    <div>
+                        <p>SUMMER</p>
+                        <h3>East Bay Tour</h3>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image/slider/simla-tour-summer.jpeg" alt="">
+                    <div>
+                        <p>SUMMER</p>
+                        <h3>Simla Tour</h3>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image/slider/carson-autumn.jpeg" alt="">
+                    <div>
+                        <p>AUTUMN</p>
+                        <h3>Carson</h3>
+                    </div>
+                </div>
+                <div class="slider-item">
+                    <img src="image/slider/mount-whitney-spring.jpg" alt="">
+                    <div>
+                        <p>SPRING</p>
+                        <h3>Mount Whitney</h3>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+
+    <!-- Container of blog -->
+    <div class="blog" id="blog">
+        <h1>Read our awesome blog post for everyone</h1>
+        <p>Our latest blog posts</p>
+        <div class="blog-contain">
+            <div class="little-container">
+                <div id="first-elem" class="blog-panel active" onclick="cl();reply_click(this.id);">
+                    <p class="blog-time">September 14, 2020</p>
+                    <p class="about-blog">HOW TO ROAD TRIP AROUND OAHU</p>
+                </div>
+
+                <div id="para-first-elem" class="responsive-big-conatiner">
+                    <div>
+                        <img class="responsive-big-container-image" src="image/blog/oahu.jpg" alt="">
+                        <h1 class="responsive-big-container-title">Things we remember the most on Oahu</h1>
+                    </div>
+                    <p class="responsive-big-container-text">First of all get to the northern coast , to see real waves at the Sunset Beach then . Experience the full force and power of the ocean every cell of his body ,  watching the surfers nimble , and promise yourself , that when - something will be able to as well ! Walk through the streets of Waimea , steeped in surf culture and an atmosphere of love for the ocean , sun , palm trees , waves and life . Choose any cafe you like  with pleasant music and tanned surfers ,order that - something incredibly tasty and feel like your at this celebration of life . And then you can leisurely drive to Haleiwa , get comfortable on the shore and enjoy the most beautiful sunset , catching yourself thinking that you are ready to stay here , in the homeland of surfing , forever !</p>
+                </div>
+
+                <div id="second-elem" class="blog-panel" onclick="cl();reply_click(this.id);">
+                    <p class="blog-time">September 12, 2020</p>
+                    <p class="about-blog">DON’T HAVE (TRAVEL) REGRETS</p>
+                </div>
+
+                <div id="para-second-elem" class="responsive-big-conatiner">
+                    <div>
+                        <img class="responsive-big-container-image" src="image/blog/regrets.jpg" alt="">
+                        <h1 class="responsive-big-container-title">Why you’ll never regret traveling?</h1>
+                    </div>
+                    <p class="responsive-big-container-text">Life never gives you the same chance twice. Doors don’t reopen. Once they shut, they shut for good.It’s easier to travel than you think. Once you take that first step out the door, anything is possible. Whether it’s a two week trip to Bali, a year-long trip around the world, or finally taking the family to Disney, get going now because you are missing a big world out there. Get ready to meet your new best friends! There’s nothing like a shared experience to bring people together. You’ll make so many friends on tour and some of them may even become friends for life. Not only will you make friends with fellow tourists, you’ll probably hit it off with a local or two as well.</p>
+                </div>
+
+                <div id="third-elem" class="blog-panel" onclick="cl();reply_click(this.id);">
+                    <p class="blog-time">September 7, 2020</p>
+                    <p class="about-blog">COOL THINGS TO DO IN SOUTH AFRICA</p>
+                </div>
+
+                <div id="para-third-elem" class="responsive-big-conatiner">
+                    <div>
+                        <img class="responsive-big-container-image" src="image/blog/southafrica.jpg" alt="">
+                        <h1 class="responsive-big-container-title">Go on a safari or surfing</h1>
+                    </div>
+                    <p class="responsive-big-container-text">Most people come to South Africa to go on a safari — and for good reason. It’s home to some of the best game drives in the world and you’ll want to spend at least a couple of nights in one of the hundreds of national parks. There’s truly nothing like it.     Both the Atlantic Ocean and the Indian Ocean coasts of South Africa offer world-class surfing. Jeffrey’s Bay on the south coast near Port Elizabeth is the most famous surfing destination in South Africa and offers big waves and multiple breaks.</p>
+                </div>
+
+                <div id="fourth-elem" class="blog-panel" onclick="cl();reply_click(this.id);">
+                    <p class="blog-time">September 7, 2020</p>
+                    <p class="about-blog">TRAVEL IS A PRIVILEGE</p>
+                </div>
+
+                <div id="para-fourth-elem" class="responsive-big-conatiner">
+                    <div>
+                        <img class="responsive-big-container-image" src="image/blog/privilege.jpg" alt="">
+                        <h1 class="responsive-big-container-title">Not everyone can travel as much as you</h1>
+                    </div>
+                    <p class="responsive-big-container-text">Even if you’ve hitchhiked around the world with no money, worked overseas, cut costs to travel around the world on $10 USD a day, or travel-hacked your way to a first-class ticket, you have the opportunity to do something most people go to sleep only dreaming about. You have the freedom and choice to move about the world in a way most people don’t.      That’s a form of privilege.</p>
+                </div>
+
+                <div id="fifth-elem" class="blog-panel" onclick="cl();reply_click(this.id);">
+                    <p class="blog-time">September 4, 2020</p>
+                    <p class="about-blog">THINGS TO SEE AND DO IN TAIWAN</p>
+                </div>
+
+                <div id="para-fifth-elem" class="responsive-big-conatiner">
+                    <div>
+                        <img class="responsive-big-container-image" src="image/blog/taiwan.jpg" alt="">
+                        <h1 class="responsive-big-container-title">Go on Northern Coastline and hit the Beaches</h1>
+                    </div>
+                    <p class="responsive-big-container-text">Head to the coast for some incredible lunar-like landscapes at Yehliu Geopark. There are some unique, otherworldly rock formations, including one that looks like Queen Elizabeth (though it took over 4,000 years to form) that are a popular tourist attraction.      The beaches of Kenting on the southern tip of the island offer fun in the sun. White Sand Bay is the most popular and a great place to soak up the sun, swim, snorkel, or even go diving (just keep an eye out for jellyfish!). Other great beaches are South Bay and Little Bali Bay.</p>
+                </div>
+
+            </div>
+            <div class="big-container">
+                <div>
+                    <img class="big-container-image" src="" alt="">
+                    <h1 class="big-container-title"></h1>
+                </div>
+                <p class="big-container-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container of gallery -->
+    <div class="gallery-container" id="gallery">
+        <h1  data-aos="fade-right" class="gallery-title">Explore the most beautiful place in the world</h1>
+        <h3  data-aos="fade-right" class="gallery-paragraph">Check out our gallery</h3>
+        <div class="image-gallery">
+            <a class="img-1 fancybox" rel="gallery" href="image/gallery/img1.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a>    
+            <a class="img-2 fancybox" rel="gallery" href="image/gallery/img2.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+            <a class="img-3 fancybox" rel="gallery" href="image/gallery/img3.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+            <a class="img-4 fancybox" rel="gallery" href="image/gallery/img4.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+            <a class="img-5 fancybox" rel="gallery" href="image/gallery/img5.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+            <a class="img-6 fancybox" rel="gallery" href="image/gallery/img6.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+            <a class="img-7 fancybox" rel="gallery" href="image/gallery/img7.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+            <a class="img-8 fancybox" rel="gallery" href="image/gallery/img8.jpeg" data-fancybox="gallery">
+                <ion-icon name="scan-circle-sharp"></ion-icon>
+            </a> 
+        </div>
+    </div>
+
+    <!-- Container of contact -->
+    <div class="contact-us-bg">
+    <div class="contact-us">
+        <h1 id="contact" >Contact us</h1>
+        <div class="contact-form">
+            <form id="register-form" action="#register-form">
+                    <div class="first-line-form">
+                        <div class="one-blok margin-10"  data-aos="fade-right">
+                            <label onclick="inputClick1()" for="name" class="label-register">&nbsp;First Name&nbsp;</label><br>
+                            <input onkeydown="inputPressKey1()" onclick="inputClick1()" maxlength="20" id="name" type="text" class="cool" name="name" value=""/>
+                            <span id="error-name"></span>
+                        </div>
+    
+                        <div class="one-blok"  data-aos="fade-left">
+                            <label onclick="inputClick2()" for="sname" class="label-register">&nbsp;Last Name&nbsp;</label><br>
+                            <input onkeydown="inputPressKey2()" onclick="inputClick2()" maxlength="20" id="sname" type="text" class="cool" name="sname" value=""/>
+                            <span id="error-sname"></span>
+                        </div>
+                    </div>
+
+                    <div class="one-blok"  data-aos="fade-up">
+                        <label onclick="inputClick3()" class="label-register">&nbsp;Email&nbsp;</label><br>
+                        <input onkeydown="inputPressKey3()" onclick="inputClick3()" maxlength="40" id="email" type="text" class="cool" name="email" value=""/>
+                        <span id="error-mail"></span>
+                    </div>
+                
+                    <div  class="one-blok"  data-aos="fade-up">
+                        <label onclick="inputClick4()" class="label-register">&nbsp;Message&nbsp;</label><br>
+                        <textarea onkeydown="inputPressKey4()" onclick="inputClick4()" maxlength="496" id="message" type="text" class="cool" name="message"></textarea>
+                        <span id="error-message"></span>
+                    </div>     
+    
+              <input onclick="fClick()" type="submit" name="send-register" value="Submit" class="register-button"/>
+              
+              <!-- Success send messagebox -->
+              <div  id="myNav">
+                <div class="overlay">
+                    <div class="overlay-content">
+                        <a href="javascript:void(0)" class="closebtn-x" onclick="closeNav()">x</a>
+                        <img src="image/success-icon.png" alt=""><br>
+                        <p>We will get back to you as soon as possible!!!</p><br>
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">Close</a>
+                    </div>
+                </div> 
+              </div>
+    
+            </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="mini-menu">
+            <div><a href="#about-us">About us</a></div>
+            <div><a href="#advantages">Advantages</a></div>
+            <div><a href="#categories">Categories</a></div>
+            <div><a href="#blog">Blog</a></div>
+            <div><a href="#gallery">Gallery</a></div>
+            <div><a href="#contact">Contact</a></div>
+        </div>
+        <div class="contact-info">
+            <div class="copyright">&copy;Copyright 2020 Travel Capture. All rights reserved. </div>
+            <div>
+                <a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook" class="social-pages"></ion-icon></a>
+                <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram" class="social-pages"></ion-icon></a>
+                <a href="https://www.youtube.com/" target="_blank"><ion-icon name="logo-youtube" class="social-pages"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Connect JS files -->
+    <script src="js/progress-bar.js"></script>
+    <script src="js/scroll-page-links.js"></script>
+    <script src="js/about-us-slider.js"></script>
+    <script src="js/numbers.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/blog-panel.js"></script>
+    <script src="js/advantage-slide.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fancybox-slide.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/btn-to-top.js"></script>
+    <script src="js/banner-text.js"></script>
+    <script src="js/hamburger-ico.js"></script>
+    <script src="js/responsive-blog.js"></script>
+
+</body>
+</html>
