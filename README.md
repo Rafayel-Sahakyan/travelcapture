@@ -3,7 +3,7 @@
 Hi, I am Rafayel.Here I launch my first project - Travel Capture. In this project, I used html, css, javascript with jquery. I payed close attention to front-end and responsive design. No templates have been used. 
 
 ## Installation
-* Git: git clone `git@github.com:rafayelsahakyan/travelcapture.git`
+* Git: `git clone git@github.com:rafayelsahakyan/travelcapture.git`
 
 ## Run
 * Run the `index.html` file in the root directory
